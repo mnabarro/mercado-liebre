@@ -19,15 +19,27 @@ p{
 
 div.top-header{
     padding: 10px;
+    height: 50%;
 }    
 
 body > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
+    background-color: #EAC926;
+    width: 100%;
+    z-index: 1;
     position: fixed;
     top:0;
+    height: 170px;
 }
 
+.logo img {
+    min-height: 70%;
+    max-height: 100%;
+    margin-right: 20px;
+}
 
 .logo-search{
     /* border: 1px rgb(0, 13, 128) solid; */
@@ -83,13 +95,6 @@ header .form .submit{
     color: #666;
     width: 10%;
     margin-left: 5px;
-}    
-
-
-header{
-    background-color: #EAC926;
-    width: 100%;
-    z-index: 1;
 }    
 
 
@@ -163,9 +168,12 @@ h3,
     margin-top: 20px;
 }
 
+section.banner{
+    margin-top: 170px;
+}
+
 section.banner img{
     width: 100%;
-    margin-top: 135px;
 }
 
 main{
@@ -328,6 +336,26 @@ width: 100px;
 
 
 @media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+    
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 48%;
+    }
+
+    /* div.top-header {
+        display: flex;
+        justify-content: space-between;
+    } */
+
+    /* .logo-search{
+        width: 60%;    
+    }     */
+}
+
+@media (min-width: 481px){
     main section article .description{
         display: block;
     }
