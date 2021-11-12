@@ -372,6 +372,8 @@ footer {
 .form-element input[type="date"],
 .form-element input[type="password"] {
   border-bottom: 1px solid var(--col-light-blue);
+  background-color: var(--col-white);
+  width: 100%;
 }
 
 .form-element input:focus {
