@@ -62,6 +62,7 @@ body > header {
 
 .search-box {
   display: flex;
+  justify-content: flex-end;
   width: 100%;
   padding: 10px 5px;
 }
@@ -433,9 +434,6 @@ input::-webkit-file-upload-button:hover {
 }
 
 @media (min-width: 481px) {
-  /* main section article .description {
-    display: block;
-  } */
 
   main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -448,7 +446,7 @@ input::-webkit-file-upload-button:hover {
   }
 
   .logo-search {
-    width: 60%;
+    width: 70%;
   }
 }
 
