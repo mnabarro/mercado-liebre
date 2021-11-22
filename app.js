@@ -1,17 +1,18 @@
 const express = require('express');
 const app = express();
+app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/home.html');
+    res.render('home');
 });
 
 app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/views/login.html');
+    res.render('login');
 });
 
 app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
+    res.render('register');
 });
 
 app.listen(process.env.PORT || 3000, ()=>{
